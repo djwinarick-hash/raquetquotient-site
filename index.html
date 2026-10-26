@@ -30,54 +30,48 @@
 <h1>Tennis Quotient</h1>
 <p>Rate professional tennis players by whom they beat and whom they lost to. Then compare any two players on the same tour, with every step of the math shown.</p>
 <p style="margin-top:18px"><!-- TODO: link to the App Store listing once the app is live (https://apps.apple.com/app/id...). Keep aria-disabled until then. --><a class="btn" aria-disabled="true" role="link">Coming soon to the App Store</a></p>
-<p class="note" style="margin-top:8px">For iPhone. No account, no ads, no tracking.</p>
+<p class="note" style="margin-top:8px">For iPhone. No account, no ads, no tracking. Comparing two players needs a monthly subscription.</p>
+<p class="note" style="margin-top:4px">New in 1.1: a History window switch (52 weeks, full history or custom), surface weighting or a same-surface-only view, and rank-adjusted values for players with few matches, which are used by default and can be switched off on the Tuning tab.</p>
 </div>
 </div></div>
 
 <section><div class="wrap">
 <h2>The idea</h2>
-<p>A win over a top-10 player should count for more than a win over a player ranked 300th, and a loss to a low-ranked player should cost more than a loss to a top-10 player. Tennis Quotient gives every match points based on the result and the opponent&#39;s rank on the ranking list in force when the tournament started. A player&#39;s value is their average points per match. To compare two players, the app uses Cohen&#39;s d, a standard measure of how far apart two averages are, with a confidence interval that shows how precise the comparison is.</p>
-<table aria-label="Points per match by opponent rank">
-<thead><tr><th>Opponent rank</th><th>Win</th><th>Loss</th></tr></thead>
-<tbody>
-<tr><td>1 to 10</td><td class="n">+2</td><td class="n">&minus;0.15</td></tr>
-<tr><td>11 to 50</td><td class="n">+1</td><td class="n">&minus;0.33</td></tr>
-<tr><td>51 to 99</td><td class="n">+0.66</td><td class="n">&minus;0.5</td></tr>
-<tr><td>100 to 149</td><td class="n">+0.5</td><td class="n">&minus;0.66</td></tr>
-<tr><td>150 to 199</td><td class="n">+0.33</td><td class="n">&minus;1</td></tr>
-<tr><td>200 or worse, or unranked</td><td class="n">+0.15</td><td class="n">&minus;2</td></tr>
-</tbody></table>
-<p class="mute" style="margin-top:10px">You can edit this table in the app and save your own version. The original always stays available.</p>
+<p>Tennis Quotient gives every match points based on the result and the opponent&#39;s rank on the ranking list in force when the tournament started: a win over a top-ranked player earns much more than a win over a low-ranked player, and a loss to a low-ranked player costs much more than a loss to a top-ranked one. A player&#39;s value is their average points per match. To compare two players, the app uses Cohen&#39;s d, a standard measure of how far apart two averages are, with a confidence interval that shows how precise the comparison is.</p>
 </div></section>
 
 <section><div class="wrap">
 <h2>What you see in the app</h2>
 <div class="shots">
-<figure><picture><source srcset="/img/shot-cohens-d.webp" type="image/webp"><img src="/img/shot-cohens-d.jpg" alt="Matchup result screen showing Cohen&#39;s d, its confidence interval and each player&#39;s average points" width="440" height="956" loading="lazy"></picture><figcaption>How far apart two players are, with Cohen&#39;s d.</figcaption></figure>
-<figure><picture><source srcset="/img/shot-every-match.webp" type="image/webp"><img src="/img/shot-every-match.jpg" alt="List of every match counted, with the opponent&#39;s rank at the time and the points earned" width="440" height="956" loading="lazy"></picture><figcaption>Every match counted, with the opponent&#39;s rank at the time.</figcaption></figure>
-<figure><picture><source srcset="/img/shot-tuning.webp" type="image/webp"><img src="/img/shot-tuning.jpg" alt="Tuning screen with switches for retirements and walkovers and the editable points table" width="440" height="956" loading="lazy"></picture><figcaption>Settings and the points table you can edit.</figcaption></figure>
+<figure><picture><source srcset="/img/shot-cohens-d.webp" type="image/webp"><img src="/img/shot-cohens-d.jpg" alt="Result screen showing Cohen&#39;s d, its confidence interval, Hedges&#39; g and each player&#39;s average points per match" width="440" height="956" loading="lazy"></picture><figcaption>How far apart two players are, with Cohen&#39;s d.</figcaption></figure>
+<figure><picture><source srcset="/img/shot-every-match.webp" type="image/webp"><img src="/img/shot-every-match.jpg" alt="Show your work: how each match is scored, then every match counted with the opponent&#39;s rank at the time and the points earned" width="440" height="956" loading="lazy"></picture><figcaption>Every match counted, with the opponent&#39;s rank at the time.</figcaption></figure>
+<figure><picture><source srcset="/img/shot-tuning.webp" type="image/webp"><img src="/img/shot-tuning.jpg" alt="Tuning screen with the opponent-rank points choice and the switches for retirements and walkovers" width="440" height="956" loading="lazy"></picture><figcaption>Settings for which matches count and how.</figcaption></figure>
 </div>
 </div></section>
 
 <section><div class="wrap">
 <div class="grid three">
-<div class="card"><h3>Your choice of matches</h3><p>The last 52 weeks by default, or the last few matches, weeks or months, or a player&#39;s full record. Turn on recency weighting to make older matches count less.</p></div>
+<div class="card"><h3>Your choice of matches</h3><p>Switch the history window on the matchup and result screens: the last 52 weeks, the full record, or a custom number of weeks, months or matches. Pick a surface to give matches there extra weight, or to use only matches on that surface. The history, surface and rank-adjustment settings were chosen by testing them on past matches, and the app shows how they were chosen. You can change any of them on the Tuning tab.</p></div>
 <div class="card"><h3>Nothing hidden</h3><p>Each comparison lists the matches it used: date, event, round, opponent, the opponent&#39;s rank at the time, win or loss, and the points earned.</p></div>
-<div class="card"><h3>Clear about the data</h3><p>Men&#39;s results from the Association of Tennis Professionals (ATP) tour start in 2007. Women&#39;s results from the Women&#39;s Tennis Association (WTA) tour start in 2024. The data is built into the app and is updated with new app versions. The app shows its date and lists known gaps.</p></div>
+<div class="card"><h3>Clear about the data</h3><p>Association of Tennis Professionals (ATP) results start in 2007; some ATP events are missing from the source, and ATP Challenger events are not included. Women&#39;s Tennis Association (WTA) results start in 2024. The data is built into the app and never comes from the network. It is refreshed about weekly through App Store app updates, and the app always shows the date the data runs through. The app lists known gaps on its Data tab.</p></div>
 </div>
 </div></section>
 
 <section><div class="wrap">
 <h2>Private by design</h2>
-<p>Tennis Quotient has no account, no ads and no tracking. It works offline and collects no personal information. Your saved comparisons and settings stay on your iPhone. Read the <a href="/privacy/">privacy policy</a>.</p>
+<p>No account, no ads, no tracking. Tennis Quotient works offline, makes no network requests for data and collects no personal information. Your saved comparisons and settings stay on your iPhone. Read the <a href="/privacy/">privacy policy</a>.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Subscription</h2>
+<p>Comparing two players needs a monthly subscription, bought in the app through Apple. New subscribers can start with a one-week trial, and the App Store shows the monthly price that follows before you confirm. It renews automatically each month until you cancel it in Settings, and Apple handles the payment. Without a subscription you can still search and browse players and see each player&#39;s value. The app shows the price for your country before you subscribe. <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>.</p>
 </div></section>
 
 </main>
 <footer><div class="wrap">
 <p>&copy; 2026 Biolexic LLC, doing business as Biolexic Labs. Contact: <a href="mailto:DrWinarick@biolexic.com">DrWinarick@biolexic.com</a></p>
-<p>Match results and rankings: BALLDONTLIE (<a href="https://www.balldontlie.io">balldontlie.io</a>).</p>
-<p>Tennis Quotient is an independent app. It is not affiliated with, endorsed by or sponsored by the Association of Tennis Professionals (ATP), the Women&#39;s Tennis Association (WTA), any tournament, any player or BALLDONTLIE.</p>
-<p class="links"><a href="/">Home</a><a href="/support/">Support</a><a href="/privacy/">Privacy Policy</a></p>
+<p>Tennis Quotient is an independent app. It is not affiliated with, endorsed by or sponsored by the Association of Tennis Professionals (ATP), the Women&#39;s Tennis Association (WTA), any tournament or any player.</p>
+<p class="links"><a href="/">Home</a><a href="/support/">Support</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Use</a></p>
 </div></footer>
 </body>
 </html>
